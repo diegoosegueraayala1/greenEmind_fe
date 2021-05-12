@@ -515,10 +515,10 @@ class UsersService {
         this.http = http;
     }
     loginUser(body) {
-        return this.http.post('http://greenemind.com:3000/user/login', body);
+        return this.http.post('https://greenemind.com:3000/user/login', body);
     }
     createUser(body) {
-        return this.http.post('http://greenemind.com:3000/user/', body);
+        return this.http.post('https://greenemind.com:3000/user/', body);
     }
 }
 UsersService.ɵfac = function UsersService_Factory(t) { return new (t || UsersService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
@@ -1851,7 +1851,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // tslint:disable-next-line:one-variable-per-declaration
-const config = { url: 'http://greenemind.com:3000', options: { query: { token: localStorage.getItem('token') } } };
+const config = { url: 'https://greenemind.com:3000', options: { query: { token: localStorage.getItem('token') } } };
 class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]] });
